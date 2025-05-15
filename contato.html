@@ -3,47 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contato</title>
-    
-    <style>
-        body {
-            background-image: url(imagens/fundo.png);
-            background-repeat: no-repeat;            /* Não repetir */
-            background-size: cover;                  /* Cobrir toda a tela */
-            background-position: center;             /* Centralizar a imagem */ 
-        }
     </style>
 </head>
 <body>
    
-    <table border="0" width="900" align="center">
+    <table class="tabela-centralizada">
         
         <!-- TOPO DO SITE -->
         <tr>
-            <td style="text-align: left; font-size: 22px;">
+            <td id="edicão-especial">
                 <b>SPECIAL EDITION</b>
             </td>
 
 
-            <td style="text-align: center;">
+            <td id="logo-do-portif">
                 <img src="imagens/Portfólio 1.png" alt="logo-portfolio 1" width="300" height="120">
             </td>
 
-            <td style="text-align: right; font-size: 16px;">
-               <a href="index.html" style="color: black;"> <b>HOME</b> &nbsp;</a> |     
-               <a href="contato.html"  style="color: black;"> <b>CONTATO</b></a>
-               
+            <!--Paginas do topo-->
+            <td id="paginas">
+               <a href="index.html"> <b>HOME</b> &nbsp;</a> |     
+               <a href="contato.html"> <b>CONTATO</b></a>  
             </td>
+
         </tr>
 
         <tr>
             <td colspan="3">
-                <hr style="border: 3px solid black;">
+                <hr class="hr-maior">
             </td>
         </tr>
 
-        <td colspan="3"; style="text-align: justify;">
+        <td colspan="3">
             <h2>Entre em contato comigo por email</h2>
+
             <p>Geralmente respondo dentro de 1 dia.</p> 
         
             <!--Form de mandar um email-->
@@ -57,8 +52,7 @@
                 Texto do email: <br>
                 <textarea name="texto do email" id=""></textarea> <br>
                 
-                <input type="submit" value="Enviar"> <br>
-                <p>Meu email: <b>atilaoliveira464@gmail.com</b></p>
+                <input type="submit" value="Enviar">
                 <hr>
 
             </form>
@@ -66,7 +60,7 @@
 
         <tr>
             <!--   LINK PARA O INSTAGRAM -->
-            <td colspan="3"; style="text-align: justify;">
+            <td colspan="3">
                 <h2>Ou entre em contato comigo pelas redes sociais</h2>
                 <p>Geralmente respondo dentro de 1 dia.</p> 
                 Instagram: 

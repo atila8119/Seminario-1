@@ -4,46 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal</title>
-   
-   <style>
-        body {
-            background-image: url(imagens/fundo.png);
-            background-repeat: no-repeat;            /* Não repetir */
-            background-size: cover;                  /* Cobrir toda a tela */
-            background-position: center;             /* Centralizar a imagem */
-        }
-
- 
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!--Parte de cima do site-->  
-    <table border="0" width="900" align="center">
+    <table class="tabela-centralizada">
             <tr>
-                <td style="text-align: left; font-size: 22px;">
+                <td id="edicão-especial">
                     <b>SPECIAL EDITION</b>
                 </td>
     
 
-                <td style="text-align: center;">
+                <td id="logo-do-portif">
                     <img src="imagens/Portfólio 1.png" alt="logo-portfolio 1" width="300" height="120">
                 </td>
 
-                <td style="text-align: right; font-size: 16px;">
-                   <a href="index.html" style="color: black;"> <b>HOME</b> &nbsp;</a> |     
-                   <a href="contato.html"  style="color: black;"> <b>CONTATO</b></a>
-                   
-                </td>
-                    
+                <!--Paginas do topo-->
+                <td id="paginas">
+                   <a href="index.html"> <b>HOME</b> &nbsp;</a> |     
+                   <a href="contato.html"> <b>CONTATO</b></a>  
+                </td>      
             </tr>
             
+
+            
             <tr>
-                <td colspan="3" style="font-size: 70px; text-align: center;"> 
-                    <hr style="border: 3px solid black;">
+                <td colspan="3" id="break-news"> 
+                    <hr class="hr-maior">
+                    
                     Breaking News!!! <br>
                     Quem será Átila?
-                    <hr style="border: 3px solid black;">
+
+                    <hr class="hr-maior">
                 </td>
             </tr>
             <tr>
@@ -54,13 +47,16 @@
 
 
         <!--Foto minha e o Sobre mim-->
-        <table border="0" width="900" align="center">
+        <table class="tabela-centralizada">
             <tr>
-                <td align="center" valign="midlle"><img src="imagens/Minha foto.jpg" width="200" height=350"></td>
+                <td id="foto-minha">
+                    <img src="imagens/Minha foto.jpg" width="200" height=350">
+                </td>
 
                 <td style="vertical-align: top; height: 100px;">
                     <h1 style="text-align: center;">Sobre Mim</h1>
-                    <p style="text-align: justify; font-size: 20px;">Meu nome é Átila Oliveira Moura e sou uma estudante 
+                    <p class="p-alinhado">
+                        Meu nome é Átila Oliveira Moura e sou uma estudante 
                         de Engenharia de Computação, na Universidade Federal do Ceará (UFC). Me interessei pelo curso quando estava no ensino 
                         médio técnicode informática, pois no meu 3ºano surgiu a oportunidade de fazer um curso de Eletrônica Digital com Arduino. 
                         No decorrer do curso, fui gostando mais e mais a cada novo projeto que ia sendo feito e no fim do curso percebi que era
@@ -70,7 +66,7 @@
                                
                     </p>
 
-                    <p style="text-align: justify; font-size: 20px;">
+                    <p class="p-alinhado">
                         Além disso, gosto muito de tecnologia e também foi uma das causas que ingressei no curso voltado na área, atualmente venho estudando
                         sobre desenvolvimento web,mas já tenho conhecimento em algumas linguagens de programação <b>(C, Python, e Java)</b>
                         que adquiri durante os semestres anteriores do meu curso. Além disso, sou ótima para 
@@ -87,10 +83,10 @@
         <br><br>
 
         <!--CONHECIMENTOS DE LINGUAGENS DE PROGRAMAÇÃO-->
-        <table  border="0" width="900" align="center">
+        <table class="tabela-centralizada">
             <tr>
-                <td colspan="3" style="text-align: center;">    
-                    <hr style="border: 2px solid black;">
+                <td colspan="3">    
+                    <hr class="hr-medio">
                     <h1>Linguagens de Programação que sei</h1>
                     <br>
                 </td>
@@ -99,16 +95,19 @@
             <!--LINGUAGENS-->
             <tr>
                 <!--LOGO DA LINGUAGEM C -->
-                <td style="text-align: center;"><img src="imagens/c-logo.png" alt="c-logo" width="70" height="70"><br>
+                <td class="centraliza-img">
+                    <img src="imagens/c-logo.png" alt="c-logo" width="70" height="70"><br>
                 </td>
                 
                   <!-- LOGO DA LINGUAGEM PYTHON -->
-                <td style="text-align: center;"><img src="imagens/logo-python.webp" alt="python-logo" width="70" height="70" > <br>
+                <td class="centraliza-img">
+                    <img src="imagens/logo-python.webp" alt="python-logo" width="70" height="70" > <br>
                    
                 </td>
 
                   <!-- LOGO DA LINGUAGEM JAVA -->
-                <td style="text-align: center;"><img src="imagens/logo-java.webp" alt="java-logo" width="70" height="70"> <br>
+                <td class="centraliza-img">
+                    <img src="imagens/logo-java.webp" alt="java-logo" width="70" height="70"> <br>
 
                 </td>
             </tr>
@@ -117,7 +116,7 @@
             <tr>
                 <td>
                     <!-- TEXTO DO C -->
-                    <P style="text-align:left; font-size: 20px;">
+                    <P class="p-linguagens">
                         Tenho conhecimento sólido em C, incluindo estrutura da linguagem, uso de funções e manipulação de ponteiros.
                         Também trabalho com estruturas de dados como listas, pilhas e árvores, implementando soluções com alocação 
                         dinâmica de memória.
@@ -126,7 +125,7 @@
 
                 <td>
                     <!-- TEXTO DO PYTHON -->
-                    <P style="text-align: left; font-size: 20px;">
+                    <P class="p-linguagens">
                         Tenho conhecimentos em Python, incluindo declaração de variáveis, estruturas condicionais (if, else, elif),
                         listas e arrays. Também sei criar e utilizar funções para organizar e reutilizar código de forma eficiente.
                         </P>
@@ -134,7 +133,7 @@
 
                 <td>
                     <!-- TEXTO DO JAVA -->
-                    <P style="text-align: left; font-size: 20px;">
+                    <P class="p-linguagens">
                         Tenho conhecimentos em Java, incluindo declaração de variáveis, uso de estruturas condicionais e loops.
                         Também sei criar classes e objetos, aplicando os princípios da programação orientada a objetos para
                         organizar e estruturar o código.
@@ -145,12 +144,13 @@
             <tr>
                 <!-- ACESSAR O GITHUB PARA VER MEUS TRABALHOS -->
                 <td colspan="3">
-                    <hr style="border: 2px solid black;">
-                    <h1 style="text-align: center;">Meus trabalhos</h1>
-                    <p style="text-align: center; font-size: 22px;">
+                    <hr class="hr-medio">
+                    <h1>Meus trabalhos</h1>
+                    <p id="p-trabalhos">
                         Se você quiser ver meus trabalhos, acesse meu <b>GitHub</b> 
                         <img src="imagens/github-logo.webp" alt="github-logo" width="30" height="30">: <br>
-                        <a href="https://github.com/atila8119" style="color: rgb(34, 9, 9);">Ir para o GitHub</a>
+                        <a href="https://github.com/atila8119" id="link-github">Ir para o GitHub</a>
+                   
                     </p>
                 </td>
             </tr>
@@ -160,9 +160,8 @@
                 <td colspan="3"> 
                     <br>
                     <hr>
-                    <h3 style="text-align: center;">
-                    Todos os direitos reservados
-                    </h3>
+                    
+                    <h3>Todos os direitos reservados</h3>
                 </td>
             </tr>
 
